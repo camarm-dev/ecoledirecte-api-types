@@ -6,3 +6,4 @@ export * from "./cloud";
 export * from "./timetable";
 export * from "./wallets";
 export * from "./documents";
+export * from "./schoolLife";
