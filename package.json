@@ -10,6 +10,7 @@
 	"scripts": {
 		"prepublish": "npm run build",
 		"build": "tsc",
+		"lint": "eslint -c .eslintrc.json",
 		"test": "echo \"Error: no test specified\" && exit 0"
 	},
 	"keywords": [
