@@ -1,3 +1,5 @@
+// Thanks to https://github.com/EduWireApps/ecoledirecte-api-docs/blob/main/README.md#vie-scolaire
+
 import { failureRes } from "../failure";
 
 export type schoolLifeRes = schoolLifeResSuccess | failureRes;
