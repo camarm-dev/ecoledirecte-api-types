@@ -1,5 +1,7 @@
-# ecoledirecte-api-types
+# Ecole Directe API Types
 
-If you need a EcoleDirecte client for JavaScript, this isn't the right place! This way: [ecoledirecte.js](https://github.com/a2br/ecoledirecte.js).
+This module is forked from [a2br/ecoledirecte-api-types](https://github.com/a2br/ecoledirecte-api-types). It is a modification of the original repository, for [Papillon](https://github.com/PapillonApp).
+
+---
 
 This is the list of the types related to EcoleDirecte's private API.
