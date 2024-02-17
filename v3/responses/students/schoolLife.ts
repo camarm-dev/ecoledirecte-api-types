@@ -28,7 +28,6 @@ export type schoolLifeItem = {
 }
 
 export type schoolLifeResData = {
-	// TODO
 	sanctionsEncouragements: Array<schoolLifeItem>,
 	absencesRetards: Array<schoolLifeItem>,
 	parametrage: {
