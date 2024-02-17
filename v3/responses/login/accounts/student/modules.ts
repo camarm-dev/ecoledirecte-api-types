@@ -32,6 +32,9 @@ export type studentAccountModule =
 
 export interface modStudBarcode extends accountModule {
 	code: "CANTINE_BARCODE";
+	params: {
+		numeroBadge: string;
+	}
 }
 export interface modStudVieScol extends accountModule {
 	code: "VIE_SCOLAIRE";
