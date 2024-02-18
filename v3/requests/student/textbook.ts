@@ -1,8 +1,10 @@
-export type textbookRequestData = {
+import {body} from "../default/body";
+
+export interface textbookRequestData extends body  {
 
 }
 
-export type textbookSetDoneStatusRequestData = {
+export interface textbookSetDoneStatusRequestData extends body  {
     idDevoirsEffectues: Array<number| null>;
     idDevoirsNonEffectues: Array<number| null>;
 }

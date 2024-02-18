@@ -1,6 +1,6 @@
 import {body} from "../default/body";
 
-export interface textbookSetDoneStatusRequestData extends body  {
+export interface messagingRequestData extends body  {
     anneeMessages: string;
 }
 
