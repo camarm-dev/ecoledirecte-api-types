@@ -28,11 +28,13 @@ export type studCommonTlResSuccess = {
 	code: 200;
 	token: string;
 	host: string;
-	data: {
-		evenements: Array<studCommonTlEvent>;
-		postits: Array<studCommonTlPostit>;
-	};
+	data: studCommonTlResData;
 };
+
+export type studCommonTlResData = {
+	evenements: Array<studCommonTlEvent>;
+	postits: Array<studCommonTlPostit>;
+}
 
 export type studCommonTlEvent = {
 	id: number;
