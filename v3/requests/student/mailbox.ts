@@ -1,5 +1,5 @@
 import {body} from "../default/body";
 
-export interface messagingRequestData extends body  {
+export interface mailboxRequestData extends body  {
     anneeMessages: string;
 }
