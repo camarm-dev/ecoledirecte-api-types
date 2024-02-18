@@ -14,6 +14,6 @@ import {
 } from "../students";
 import {schoolsRes, studentsRes} from "../teachers";
 
-export type response = loginRes | cloudRes | cloudResFile | cloudResFolder | mailboxRes | mailboxResMessage |
-    timetableRes | studentDocsRes | gradesRes | manualsRes | schoolLifeRes | textbookRes | studTlRes | walletsRes |
-    schoolsRes | studCommonTlRes | studentsRes
+export type response = loginRes & cloudRes & cloudResFile & cloudResFolder & mailboxRes & mailboxResMessage &
+    timetableRes & studentDocsRes & gradesRes & manualsRes & schoolLifeRes & textbookRes & studTlRes & walletsRes &
+    schoolsRes & studCommonTlRes & studentsRes
