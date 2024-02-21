@@ -7,23 +7,25 @@ export type studentDocsResSuccess = {
 	code: 200;
 	token: string;
 	host: string;
-	data: {
-		administratifs: Array<studentDoc>;
-		factures: Array<studentDoc>;
-		viescolaire: Array<studentDoc>;
-		notes: Array<studentDoc>;
+	data: studentDocsResData
+};
 
-		listesPiecesAVerser: {
-			listesPieces: unknown[];
-			personnes: Array<{
-				id: number;
-				nom: string;
-				prenom: string;
-				type: role;
-			}>;
-			pieces: unknown[];
-			televersements: unknown[];
-		};
+export type studentDocsResData = {
+	administratifs: Array<studentDoc>;
+	factures: Array<studentDoc>;
+	viescolaire: Array<studentDoc>;
+	notes: Array<studentDoc>;
+
+	listesPiecesAVerser: {
+		listesPieces: unknown[];
+		personnes: Array<{
+			id: number;
+			nom: string;
+			prenom: string;
+			type: role;
+		}>;
+		pieces: unknown[];
+		televersements: unknown[];
 	};
 };
 
