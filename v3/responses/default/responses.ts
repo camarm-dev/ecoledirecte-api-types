@@ -3,6 +3,7 @@ import {cloudRes, cloudResFile, cloudResFolder} from "../global/cloud";
 import {mailboxRes, mailboxResMessage} from "../global/mailbox";
 import {timetableRes} from "../global/timetable";
 import {
+    formsRes,
     gradesRes,
     manualsRes,
     schoolLifeRes,
@@ -16,4 +17,4 @@ import {schoolsRes, studentsRes} from "../teachers";
 
 export type response = loginRes & cloudRes & cloudResFile & cloudResFolder & mailboxRes & mailboxResMessage &
     timetableRes & studentDocsRes & gradesRes & manualsRes & schoolLifeRes & textbookRes & studTlRes & walletsRes &
-    schoolsRes & studCommonTlRes & studentsRes
+    schoolsRes & studCommonTlRes & studentsRes & formsRes

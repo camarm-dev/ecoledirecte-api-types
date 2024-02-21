@@ -9,3 +9,4 @@ export * from "./documents";
 export * from "./schoolLife";
 export * from "./manuals";
 export * from "./forms";
+export * from "./workspaces";

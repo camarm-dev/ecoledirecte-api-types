@@ -7,6 +7,15 @@ export type failureRes = {
 		accounts?: [];
 	};
 };
+
+export type emptyRes = {
+	code: number;
+	token: string;
+	host?: string;
+	message: string;
+	data: unknown
+} | failureRes;
+
 export function isFailure(data: Record<string, unknown>): data is failureRes {
 	try {
 		const usualError = !data.token && data.code !== 200;
