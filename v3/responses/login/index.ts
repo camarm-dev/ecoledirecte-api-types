@@ -9,7 +9,9 @@ export type loginResSuccess = {
 	code: 200;
 	token: string;
 	message: "";
-	data: {
-		accounts: Array<account>;
-	};
+	data: loginResData
+};
+
+export type loginResData = {
+	accounts: Array<account>;
 };
