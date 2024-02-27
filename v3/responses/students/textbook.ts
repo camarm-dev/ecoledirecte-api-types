@@ -71,10 +71,10 @@ export type textbookResSuccess = {
 	 * UNPREDICTABLE KEYS
 	 * @example data["2020-01-14"]: Array<textbookAssignement>
 	 */
-	data: textBookResData;
+	data: textbookResData;
 };
 
-export type textBookResData = {
+export type textbookResData = {
 	[key: string]: Array<textbookAssignement>;
 }
 
