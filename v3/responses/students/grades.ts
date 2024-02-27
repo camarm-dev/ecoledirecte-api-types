@@ -46,6 +46,9 @@ export type gradesResData = {
 		libelleEval2: string;
 		libelleEval3: string;
 		libelleEval4: string;
+		libelleEvalCompNum1: string;
+		libelleEvalCompNum2: string;
+		libelleEvalCompNum3: string;
 		affichageMoyenne: boolean;
 		affichagePositionMatiere: boolean;
 		affichageNote: boolean;
