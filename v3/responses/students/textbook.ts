@@ -71,9 +71,12 @@ export type textbookResSuccess = {
 	 * UNPREDICTABLE KEYS
 	 * @example data["2020-01-14"]: Array<textbookAssignement>
 	 */
-	// eslint-disable-next-line @typescript-eslint/no-explicit-any
-	data: Record<string, Array<textbookAssignement>>;
+	data: textBookResData;
 };
+
+export type textBookResData = {
+	[key: string]: Array<textbookAssignement>;
+}
 
 export type textbookAssignement = {
 	matiere: string;
