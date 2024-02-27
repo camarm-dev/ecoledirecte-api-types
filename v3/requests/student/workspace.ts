@@ -4,6 +4,10 @@ export interface workspaceRequestData extends body  {
 
 }
 
+export interface workspaceDiaryRequestData extends body {
+    nbProchainsEvents: number
+}
+
 export interface joinWorkspaceRequestData extends body  {
     id: number;
     titre: string;
