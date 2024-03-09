@@ -11,3 +11,4 @@ export * from "./manuals";
 export * from "./forms";
 export * from "./workspaces";
 export * from "./communicationBook";
+export * from "./orders";
