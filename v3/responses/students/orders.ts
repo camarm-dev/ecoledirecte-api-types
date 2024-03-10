@@ -1,15 +1,5 @@
 import {failureRes} from "../failure";
 
-export type schoolMenuRes = schoolMenuResSuccess | failureRes;
-
-export type schoolMenuResSuccess = {
-    data: schoolMenuResData;
-}
-
-export type schoolMenuResData = {
-
-}
-
 export type startOrderRes = startOrderResSuccess | failureRes;
 
 export type startOrderResSuccess = {
