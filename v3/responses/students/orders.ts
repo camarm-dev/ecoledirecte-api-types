@@ -65,6 +65,27 @@ export type ordersResData = {
     joursFeries: Array<string>;
 }
 
+export type pastOrder = {
+    idCommande: number;
+    /**
+     * @example "010203-15"
+     */
+    numeroCommande: string;
+    /**
+     * @example "12:00 - 13:45"
+     */
+    creneau: string;
+    date: string;
+    etat: string;
+    estHorsDelai: boolean;
+    idUser: number;
+    /**
+     * @example "ELEVE"
+     */
+    typeUser: string;
+    articles: Array<detailedArticle>;
+}
+
 
 /**
  * Tab Point de passage
