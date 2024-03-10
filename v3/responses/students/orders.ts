@@ -140,3 +140,26 @@ export type detailedArticle = {
         }
     }>
 }
+
+export type orderPlacedRes = orderPlacedResSuccess | failureRes;
+
+export type orderPlacedResSuccess = {
+    data: orderPlacedResData;
+}
+
+export type orderPlacedResData = {
+    idCommande: number;
+    numeroCommande: string;
+    creneau: string;
+    date: string;
+    dateCreneau: string;
+    etat: string;
+    estHorsDelai: boolean;
+    idUser: number;
+    typeUser: string;
+    articles: Array<detailedArticle>;
+    pointDePassage: {
+        id: number;
+        libelle: string;
+    };
+}
