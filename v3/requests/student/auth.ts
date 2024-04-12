@@ -9,12 +9,12 @@ export interface authRequestData extends body  {
     sesouvenirdemoi?: boolean;
     typeCompte?: role;
     accesstoken?: string;
-    fa?: [
+    fa?: Array<
         {
             cn: string,
             cv: string
         }
-    ];
+    >;
 }
 
 export interface loginQCMValidationRequestData extends body {
