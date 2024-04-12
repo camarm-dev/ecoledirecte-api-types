@@ -1,5 +1,4 @@
 import {failureRes} from "../failure";
-import {account} from "./accounts/index";
 
 export type doubleauthRes = doubleauthResSuccess | failureRes;
 
