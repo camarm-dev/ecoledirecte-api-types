@@ -6,10 +6,12 @@ export type doubleauthResSuccess = {
     code: 200;
     token: string;
     message: "";
-    data: {
-        question: string;
-        propositions: Array<string>;
-    };
+    data: doubleauthResData;
+};
+
+export type doubleauthResData = {
+    question: string;
+    propositions: Array<string>;
 };
 
 export type doubleauthValidationRes = doubleauthValidationResSuccess | failureRes;
@@ -18,8 +20,10 @@ export type doubleauthValidationResSuccess = {
     code: 200;
     token: string;
     message: "";
-    data: {
-        cn: string;
-        cv: string;
-    };
+    data: doubleauthValidationResData;
+};
+
+export type doubleauthValidationResData = {
+    cn: string;
+    cv: string;
 };
