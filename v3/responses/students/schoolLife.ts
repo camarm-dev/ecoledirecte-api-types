@@ -1,6 +1,7 @@
 // Thanks to https://github.com/EduWireApps/ecoledirecte-api-docs/blob/main/README.md#vie-scolaire
 
 import { failureRes } from "../failure";
+
 export type schoolLifeRes = schoolLifeResSuccess | failureRes;
 export type schoolLifeResSuccess = {
     code: 200;
@@ -8,6 +9,7 @@ export type schoolLifeResSuccess = {
     host: string;
     data: schoolLifeResData;
 };
+
 export type schoolLifeItem = {
     id: number;
     idEleve: number;
@@ -26,6 +28,7 @@ export type schoolLifeItem = {
     dateDeroulement: string;
     interval?: { start: string; end: string };
 };
+
 export type schoolLifeResData = {
     sanctionsEncouragements: Array<schoolLifeItem>;
     absencesRetards: Array<schoolLifeItem>;
